@@ -1,0 +1,245 @@
+@font-face {
+	font-family: "Impact";
+	font-weight: 600;
+	src: url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+	/*src: url(https://shotwars.io/Impact.ttf) format("truetype");*/
+}
+
+@font-face {
+	font-family: "Impact2";
+	font-weight: bolder;
+	src: url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+	/*src: url(https://shotwars.io/Impact.ttf) format("truetype");*/
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+#partnerslink {
+	margin: 0px;
+	padding: 0px;
+	width: 300px;
+	text-align: left;
+	color: #a6a6a6;
+	font-size: 20px;
+}
+
+.disimg {
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+.disimg2 {
+	display: block;
+	float: left;
+	width: 50px;
+	height: 50px;
+	padding: 3px;
+	padding-bottom: 7px;
+}
+
+.disimg3 {
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 2.5px;
+	opacity: 0.6;
+}
+
+.disimg4 {
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 2.5px;
+	opacity: 0.6;
+}
+
+#vignette {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: inline;
+	/*visibility: invisible;*/
+	opacity: 0.1;
+	z-index: 2;
+}
+
+.upgradebutton {
+	width: 50px;
+	font-family: Impact;
+	height: 65px;
+	margin-top: 7.5px;
+	margin-bottom: 7.5px;
+	border-radius: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 10px;
+	text-align: center;
+	border: 0px solid gray;
+}
+
+.upgradebutton:hover {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.clickybutton {
+	width: 25px;
+	height: 25px;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 10px;
+	text-align: center;
+	border: 0px solid gray;
+	padding: 0px;
+}
+
+.clickybutton:hover {
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.usbutton {
+	background: none;
+	border: none;
+}
+
+.sbutton {
+	background: rgba(255, 255, 255, 0.7);
+	border: none;
+	border-radius: 10px;
+}
+
+.centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: 23px;
+	margin-top: 50px;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
+
+.centeredd {
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, 0%);
+}
+
+.centereddd {
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, 0%);
+}
+
+#items {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	font-family: Arial;
+	font-size: 30px;
+	bottom: 2px;
+	right: 2px;
+	border: 2px solid white;
+}
+
+#items td {
+	border: 2px solid white;
+}
+
+#theloaderimgs {
+	display: block;
+	margin-left: 120;
+	margin-top: 20;
+	transform: translate(-50%, -50%);
+}
+
+.closebutton {
+	width: 300px;
+	height: 50px;
+	color: white;
+	background-color: #54A6A5;
+	font-family: Impact;
+	border-radius: 5px;
+	font-size: 35px;
+	border: none;
+}
+
+.closebutton2 {
+	width: 150px;
+	height: 20px;
+	float: left;
+	color: white;
+	background-color: #3E7B7B;
+	font-family: Impact;
+	border-radius: 5px;
+	font-size: 15px;
+	border: none;
+}
+
+.leaderboard {
+	font-family: Impact;
+	border-collapse: collapse;
+	color: white;
+	width: 100%;
+	font-size: 10px;
+	z-index: 50;
+}
+
+.leaderboard td,
+.leaderboard th {
+	padding: 5px;
+	font-size: 10px;
+	color: white;
+}
+
+.leaderboard caption {
+	color: white;
+}
+
+.lsec {
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+}
+
+.closebutton:hover {
+	background-color: #3E7B7B;
+}
+
+.closebutton2:hover {
+	background-color: #3E7B7B;
+}
+
+.spinner {
+	position: absolute;
+	z-index: 50;
+	display: block;
+	top: 50%;
+	left: 50%;
+	width: 180px;
+	height: 180px;
+	margin: -50% 0 0 -50%;
+	animation: spin 7s forwards;
+}
+
+@keyframes pulse {
+	25% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1.0);
+	}
+	75% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
